@@ -10,6 +10,11 @@ def validate_pin(pin):
 
     return True
 
+def validate_pin2(pin):
+    if re.match('\d\d\d\d',pin,flags=0):
+        return True
+    else:
+        return False
 
 
 
@@ -19,10 +24,3 @@ print validate_pin('')
 print validate_pin('12345')
 print validate_pin('abcd')
 print validate_pin('abcd5')
-
-
-def validate_pin2(pin):
-    if \d\d\d\d
-        return True
-    else 
-        return False
